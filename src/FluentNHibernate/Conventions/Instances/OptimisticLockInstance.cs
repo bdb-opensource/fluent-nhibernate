@@ -30,5 +30,15 @@ namespace FluentNHibernate.Conventions.Instances
         {
             setter("all");
         }
+
+        public void False()
+        {
+            setter("false");
+        }
+
+        public void True()
+        {
+            setter("true");
+        }
     }
 }
