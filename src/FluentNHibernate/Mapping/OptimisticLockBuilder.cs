@@ -42,6 +42,17 @@ namespace FluentNHibernate.Mapping
         {
             setter("all");
         }
+
+
+        public void False()
+        {
+            setter("false");
+        }
+
+        public void True()
+        {
+            setter("true");
+        }
     }
 
     public class OptimisticLockBuilder<TParent> : OptimisticLockBuilder
@@ -87,6 +98,18 @@ namespace FluentNHibernate.Mapping
         public new TParent All()
         {
             base.All();
+            return parent;
+        }
+
+        public new TParent True()
+        {
+            base.True();
+            return parent;
+        }
+
+        public new TParent False()
+        {
+            base.False();
             return parent;
         }
     }
